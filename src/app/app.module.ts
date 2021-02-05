@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { MyappService } from './myapp.service';
+import { ChildComponent } from './child/child.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MyappService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
